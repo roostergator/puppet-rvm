@@ -43,7 +43,7 @@ class rvm::passenger::apache(
         }
       }
     }
-    CentOS,RedHati,Scientific: {
+    CentOS,RedHat,Scientific: {
       if !defined(Class['rvm::passenger::apache::centos::post']) {
         class { 'rvm::passenger::apache::centos::post':
           ruby_version       => $ruby_version,
